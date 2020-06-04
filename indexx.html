@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<script src="angular.min.js"></script>
+<script src="test.js">
+</script>
+<script src="ris.js"></script>
+
+</head>
+  <body>
+    <h1>My first Angular App</h1>
+    <div class=""  ng-app="namecalculator" ng-controller="namecalculatorcontroller" >
+Your Name:
+      <input type="text" ng-model="name" ng-keyup="displayNumeric();" ng-blur="go();">
+<br>
+{{name}}
+
+<br>
+Total Numeric Value is:{{total}}<br>
+{{message()}} is a message from {{name}}
+<br>
+<img ng-src="C:\Users\user\Desktop\{{stateofbulb}}" width="50px" height="60px"><br>
+<button type="button" name="button" ng-click="change();">Switch On!</button>
+    </div>
+    <!-- <div class="" ng-app="mymodule" ng-controller="control"> -->
+
+  </body>
+</html>
